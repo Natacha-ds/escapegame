@@ -1,13 +1,15 @@
 import React, { useState } from 'react';
+import './index.css';
 
 export function SecretCode() {
     const [secretCode, setSecretCode] = useState('');
     const [proposition, setProposition] = useState('');
+
     function handleTermChange(event) {
         setSecretCode(event.target.value.toLowerCase());
     }
     function handleClick() {
-        if (secretCode === 'inception') {
+        if (secretCode === 'tentation') {
             setProposition('true');
         } else if (secretCode === '') {
             setProposition('empty');
@@ -18,29 +20,46 @@ export function SecretCode() {
 
     function getResults() {
         if (proposition === 'true') {
-            console.log('v1 ' + secretCode);
             return (
                 <div>
-                    <h2> Well done ! 👍 </h2>
-                    <button> Next </button>
+                    <br />
+                    <button className="next"> >> Next </button>
                 </div>
             );
         } else if (proposition === 'false') {
-            console.log('v2 ' + secretCode);
-            return <h2> Essaye encore </h2>;
+            return <p className="wrongAnswer"> ...Essaye encore... </p>;
         } else {
         }
     }
     return (
         <div>
-            <h1>Devine le code secret pour passer à la prochaine étape</h1>
-            <p>
-                4U D3P4r7 C357 8451QU3 r13N D3 N0UV34U N1 D3 C0MP11QU3 M415
-                r4P1D3M3N7 C4 V4 53 6473r 5017 P4713N7 P0Ur Y 4rr1V3r
-            </p>
-            <input onChange={handleTermChange}></input>
-            <button onClick={handleClick}> Valider </button>
-            <div>{getResults()}</div>
+            <h1>LE CODE SECRET </h1>
+            <div className="gameBlock">
+                <p className="explanations">
+                    Trouve le code secret pour passer à la prochaine énigme...
+                </p>
+
+                <p>
+                    4U D3P4r<span className="secretLetter">7</span> C357 8451QU3
+                    r1<span className="secretLetter">3</span>N D3
+                    <span className="secretLetter">N</span>0UV34U N1 D3 C0MP11QU
+                    3 M415 r4P1D3M3N
+                    <span className="secretLetter">7</span> C4 V
+                    <span className="secretLetter">4</span> 53 6473r 50 1
+                    <span className="secretLetter">7</span> P47
+                    <span className="secretLetter">1</span>3N7 P
+                    <span className="secretLetter">0</span>Ur 646
+                    <span className="secretLetter">N</span>3r
+                </p>
+                <input
+                    onChange={handleTermChange}
+                    className="userInput"
+                ></input>
+                <button onClick={handleClick} className="validationButton">
+                    Tenter ma chance
+                </button>
+                <div>{getResults()}</div>
+            </div>
         </div>
     );
 }
