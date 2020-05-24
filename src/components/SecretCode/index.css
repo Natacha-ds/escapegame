@@ -6,7 +6,7 @@
 }
 
 body {
-    background-image: url('../../Images/black-and-white-blank-challenge-connect-262488.jpg');
+    background-image: url('../../Images/fondpuzzle.jpg');
     height: 1000px;
 }
 
@@ -15,7 +15,7 @@ body {
 }
 
 .userInput {
-    height: 15px;
+    height: 30px;
     width: 200px;
-    font-size: 14px;
+    font-size: 16px;
 }
