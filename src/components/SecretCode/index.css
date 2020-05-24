@@ -1,0 +1,21 @@
+.gameBlock {
+    margin: 10px;
+    padding: 10px;
+    border: solid 2px black;
+    background-color: rgba(223, 223, 223, 0.7);
+}
+
+body {
+    background-image: url('../../Images/fondpuzzle.jpg');
+    height: 1000px;
+}
+
+.secretLetter {
+    font-weight: 600;
+}
+
+.userInput {
+    height: 30px;
+    width: 200px;
+    font-size: 16px;
+}
