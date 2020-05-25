@@ -2,6 +2,7 @@ import React from 'react';
 import { BrowserRouter as Router, Switch, Route, Link } from 'react-router-dom';
 import { SecretCode } from './components/SecretCode';
 import { Home } from './components/Home';
+import { ColorsAndLetters } from './components/ColorsAndLetters';
 
 export default function App() {
     return (
@@ -15,6 +16,11 @@ export default function App() {
                         <li>
                             <Link to="/secretcode">Secret Code</Link>
                         </li>
+                        <li>
+                            <Link to="/colorsandletters">
+                                Colors and Letters
+                            </Link>
+                        </li>
                     </ul>
                 </nav>
 
@@ -23,6 +29,9 @@ export default function App() {
                 <Switch>
                     <Route path="/secretcode">
                         <SecretCode />
+                    </Route>
+                    <Route path="/colorsandletters">
+                        <ColorsAndLetters />
                     </Route>
                     <Route path="/">
                         <Home />
