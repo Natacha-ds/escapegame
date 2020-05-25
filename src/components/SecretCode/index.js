@@ -1,5 +1,6 @@
 import React, { useState } from 'react';
 import './index.css';
+import { NextButton } from '../NextButton/index';
 
 export function SecretCode() {
     const [secretCode, setSecretCode] = useState('');
@@ -23,7 +24,7 @@ export function SecretCode() {
             return (
                 <div>
                     <br />
-                    <button className="next"> >> Next </button>
+                    <NextButton />
                 </div>
             );
         } else if (proposition === 'false') {
