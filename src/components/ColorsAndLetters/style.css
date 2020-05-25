@@ -1,0 +1,12 @@
+body {
+    background-color: white;
+    height: 3000px;
+}
+
+.mainimage {
+    height: 300px;
+}
+
+.letterToChoose {
+    display: flex;
+}
