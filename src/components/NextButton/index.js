@@ -1,6 +1,6 @@
 import React, { useState } from 'react';
 import './index.css';
 
-export function NextButton() {
-    return <button className="next"> >> Next </button>;
+export function NextButton({ text }) {
+    return <button className="next"> {text} </button>;
 }
