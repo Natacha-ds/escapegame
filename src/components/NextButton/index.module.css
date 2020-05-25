@@ -1,0 +1,10 @@
+.next {
+    padding: 8px 0 8px 0;
+    font-size: 20px;
+    background: #478bf9;
+    color: #fff;
+    border-radius: 6px;
+    width: 100px;
+    border: none;
+    font-family: 'Lato';
+}
