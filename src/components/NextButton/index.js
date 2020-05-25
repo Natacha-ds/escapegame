@@ -1,6 +1,6 @@
 import React, { useState } from 'react';
-import './index.css';
+import './index.module.css';
 
 export function NextButton({ text }) {
-    return <button className="next"> {text} </button>;
+    return <button className="next"> {text}</button>;
 }
