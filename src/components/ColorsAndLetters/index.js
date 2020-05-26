@@ -1,7 +1,7 @@
 import React, { useState } from 'react';
 import { NextButton } from '../NextButton';
 import './style.css';
-import pastille from '../../Images/pastillev2.png';
+import pastille from '../../Images/pastillev3.png';
 import letter from '../../Images/lettrev2.png';
 
 export function ColorsAndLetters() {
@@ -20,6 +20,15 @@ export function ColorsAndLetters() {
     function getResults() {
         if (letterChoosen == 'e' && clickNumber == '5') {
             return <NextButton text=">> Next" />;
+        } else if (letterChoosen == 'e' && clickNumber < '5') {
+            return;
+        } else if (!letterChoosen == 'e' || !letterChoosen == '') {
+            return (
+                <p className="wrongLetter">
+                    {' '}
+                    Es-tu sûr d'avoir choisi la bonne lettre ?
+                </p>
+            );
         }
     }
 
