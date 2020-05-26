@@ -1,6 +1,8 @@
-body {
-    background-color: white;
-    height: 3000px;
+.globalColorsAndLetters {
+    background-image: url('../../Images/fondenigme2.jpg');
+    background-repeat: no-repeat;
+    height: 1000px;
+    background-size: cover;
 }
 
 .mainimage {
@@ -9,4 +11,21 @@ body {
 
 .letterToChoose {
     display: flex;
+}
+
+.oneletter {
+    width: 40px;
+    font-size: 40px;
+    text-transform: uppercase;
+}
+
+.images {
+    display: flex;
+    justify-content: center;
+}
+
+.center {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
 }
