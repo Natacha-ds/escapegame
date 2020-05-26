@@ -5,8 +5,10 @@
     background-color: rgba(223, 223, 223, 0.7);
 }
 
-body {
+.globalSecretCode {
     background-image: url('../../Images/fondpuzzle.jpg');
+    background-size: cover;
+    background-repeat: no-repeat;
     height: 1000px;
 }
 

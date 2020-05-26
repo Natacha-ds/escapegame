@@ -1,0 +1,38 @@
+.globalColorsAndLetters {
+    background-image: url('../../Images/fondenigme2.jpg');
+    background-repeat: no-repeat;
+    height: 1000px;
+    background-size: cover;
+}
+
+.mainimage {
+    height: 300px;
+}
+
+.letterToChoose {
+    display: flex;
+}
+
+.oneletter {
+    width: 40px;
+    font-size: 40px;
+    text-transform: uppercase;
+}
+
+.images {
+    display: flex;
+    justify-content: center;
+}
+
+.center {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.wrongLetter {
+    color: #de5a5a;
+    font-size: 24px;
+    justify-content: center;
+    display: flex;
+}

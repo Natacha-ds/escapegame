@@ -1,14 +1,21 @@
 import React, { useState } from 'react';
 import './index.css';
 import { NextButton } from '../NextButton';
+import { useHistory } from 'react-router-dom';
 
 export function SecretCode() {
     const [secretCode, setSecretCode] = useState('');
     const [proposition, setProposition] = useState('');
+    const history = useHistory();
 
     function handleTermChange(event) {
         setSecretCode(event.target.value.toLowerCase());
     }
+
+    function handleRedirection() {
+        history.push('/colorsandletters');
+    }
+
     function handleClick() {
         if (secretCode === 'tentation') {
             setProposition('true');
@@ -24,7 +31,10 @@ export function SecretCode() {
             return (
                 <div>
                     <br />
-                    <NextButton text=">> Next" />
+                    <NextButton
+                        text=">> Next"
+                        handleClick={handleRedirection}
+                    />
                 </div>
             );
         } else if (proposition === 'false') {
@@ -33,7 +43,7 @@ export function SecretCode() {
         }
     }
     return (
-        <div>
+        <div className="globalSecretCode">
             <h1>LE CODE SECRET </h1>
             <div className="gameBlock">
                 <p className="explanations">
