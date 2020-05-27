@@ -10,7 +10,7 @@ export function ColorsAndLetters() {
 
     function handleClick(e) {
         setLetterChoosen(e.currentTarget.innerHTML);
-        if (letterChoosen == e.currentTarget.innerHTML) {
+        if (letterChoosen === e.currentTarget.innerHTML) {
             setClickNumber(clickNumber + 1);
         } else {
             setClickNumber(1);
@@ -18,11 +18,11 @@ export function ColorsAndLetters() {
     }
 
     function getResults() {
-        if (letterChoosen == 'e' && clickNumber == '5') {
+        if (letterChoosen === 'e' && clickNumber === 5) {
             return <NextButton text=">> Prochaine Enigme" />;
-        } else if (letterChoosen == 'e' && clickNumber < '5') {
+        } else if (letterChoosen === 'e' && clickNumber < '5') {
             return;
-        } else if (!letterChoosen == 'e' || !letterChoosen == '') {
+        } else if (!letterChoosen === 'e' || !letterChoosen === '') {
             return (
                 <p className={style.wrongLetter}>
                     {' '}
@@ -37,8 +37,16 @@ export function ColorsAndLetters() {
             <h1> LA COULEUR DES LETTRES </h1>
 
             <div className={style.images}>
-                <img src={pastille} className={style.mainimage} />
-                <img src={letter} className={style.mainimage} />
+                <img
+                    src={pastille}
+                    className={style.mainimage}
+                    alt="pastille de couleur"
+                />
+                <img
+                    src={letter}
+                    className={style.mainimage}
+                    alt="suite de lettres"
+                />
             </div>
             <div className={style.center}>
                 <p className={style.explanations}>
