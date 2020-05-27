@@ -3,10 +3,12 @@ import { NextButton } from '../NextButton';
 import style from './style.module.css';
 import pastille from '../../Images/pastillev3.png';
 import letter from '../../Images/lettrev2.png';
+import { useHistory } from 'react-router-dom';
 
 export function ColorsAndLetters() {
     const [letterChoosen, setLetterChoosen] = useState('');
     const [clickNumber, setClickNumber] = useState(1);
+    const history = useHistory();
 
     function handleClick(e) {
         setLetterChoosen(e.currentTarget.innerHTML);
@@ -19,7 +21,12 @@ export function ColorsAndLetters() {
 
     function getResults() {
         if (letterChoosen === 'e' && clickNumber === 5) {
-            return <NextButton text=">> Prochaine Enigme" />;
+            return (
+                <NextButton
+                    text=">> Prochaine Enigme"
+                    handleClick={handleRedirection}
+                />
+            );
         } else if (letterChoosen === 'e' && clickNumber < '5') {
             return;
         } else if (!letterChoosen === 'e' || !letterChoosen === '') {
@@ -30,6 +37,10 @@ export function ColorsAndLetters() {
                 </p>
             );
         }
+    }
+
+    function handleRedirection() {
+        history.push('/secretexit');
     }
 
     return (
