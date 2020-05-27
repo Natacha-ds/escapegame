@@ -1,0 +1,55 @@
+@import url('https://fonts.googleapis.com/css2?family=Abril+Fatface&family=Vollkorn:ital,wght@0,400;0,500;0,600;0,669;0,700;0,800;0,900;1,400;1,500;1,600;1,669;1,700;1,800;1,900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&display=swap');
+
+.gameBlock {
+    margin: 10px;
+    padding: 10px;
+    border: solid 2px black;
+    background-color: rgba(223, 223, 223, 0.7);
+}
+
+.globalSecretCode {
+    background-image: url('../../Images/fondpuzzle.jpg');
+    background-size: cover;
+    background-repeat: no-repeat;
+    height: 700px;
+}
+
+.secretLetter {
+    font-weight: 600;
+}
+
+.userInput {
+    height: 30px;
+    width: 200px;
+    font-size: 16px;
+}
+
+.validationButton {
+    padding: 8px 0 8px 0;
+    font: bold 16px Arial;
+    color: #484141;
+    border-radius: 6px;
+    width: 160px;
+    border: solid 2px#484141;
+    margin-left: 8px;
+    background: none;
+    outline: none;
+    font-family: 'Lato';
+}
+
+.wrongAnswer {
+    color: #de5a5a;
+}
+
+.explanations {
+    font-style: italic;
+    font-family: 'Vollkorn';
+    font-size: 16px;
+}
+
+h1 {
+    font-family: 'Abril Fatface';
+    text-align: center;
+    font-size: 60px;
+}

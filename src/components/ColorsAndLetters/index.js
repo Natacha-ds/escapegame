@@ -1,6 +1,6 @@
 import React, { useState } from 'react';
 import { NextButton } from '../NextButton';
-import './style.css';
+import style from './style.module.css';
 import pastille from '../../Images/pastillev3.png';
 import letter from '../../Images/lettrev2.png';
 
@@ -19,12 +19,12 @@ export function ColorsAndLetters() {
 
     function getResults() {
         if (letterChoosen == 'e' && clickNumber == '5') {
-            return <NextButton text=">> Next" />;
+            return <NextButton text=">> Prochaine Enigme" />;
         } else if (letterChoosen == 'e' && clickNumber < '5') {
             return;
         } else if (!letterChoosen == 'e' || !letterChoosen == '') {
             return (
-                <p className="wrongLetter">
+                <p className={style.wrongLetter}>
                     {' '}
                     Es-tu sûr d'avoir choisi la bonne lettre ?
                 </p>
@@ -33,43 +33,43 @@ export function ColorsAndLetters() {
     }
 
     return (
-        <div className="globalColorsAndLetters">
-            <h1> La couleur des lettres </h1>
+        <div className={style.globalColorsAndLetters}>
+            <h1> LA COULEUR DES LETTRES </h1>
 
-            <div className="images">
-                <img src={pastille} className="mainimage" />
-                <img src={letter} className="mainimage" />
+            <div className={style.images}>
+                <img src={pastille} className={style.mainimage} />
+                <img src={letter} className={style.mainimage} />
             </div>
-            <div className="center">
-                <p className="explanations center">
+            <div className={style.center}>
+                <p className={style.explanations}>
                     La bonne lettre, pour combien de fois... ?
                 </p>
-                <div className="letterToChoose">
-                    <p className="oneletter" onClick={handleClick}>
+                <div className={style.letterToChoose}>
+                    <p className={style.oneletter} onClick={handleClick}>
                         a
                     </p>
-                    <p className="oneletter" onClick={handleClick}>
+                    <p className={style.oneletter} onClick={handleClick}>
                         z
                     </p>
-                    <p className="oneletter" onClick={handleClick}>
+                    <p className={style.oneletter} onClick={handleClick}>
                         r
                     </p>
-                    <p className="oneletter" onClick={handleClick}>
+                    <p className={style.oneletter} onClick={handleClick}>
                         t
                     </p>
-                    <p className="oneletter" onClick={handleClick}>
+                    <p className={style.oneletter} onClick={handleClick}>
                         n
                     </p>
-                    <p className="oneletter" onClick={handleClick}>
+                    <p className={style.oneletter} onClick={handleClick}>
                         u
                     </p>
-                    <p className="oneletter" onClick={handleClick}>
+                    <p className={style.oneletter} onClick={handleClick}>
                         s
                     </p>
-                    <p className="oneletter" onClick={handleClick}>
+                    <p className={style.oneletter} onClick={handleClick}>
                         p
                     </p>
-                    <p className="oneletter" onClick={handleClick}>
+                    <p className={style.oneletter} onClick={handleClick}>
                         e
                     </p>
                 </div>

@@ -7,7 +7,7 @@ import { ColorsAndLetters } from './components/ColorsAndLetters';
 export default function App() {
     return (
         <Router>
-            <div>
+            <div className="menu">
                 <nav>
                     <ul>
                         <li>
@@ -23,7 +23,6 @@ export default function App() {
                         </li>
                     </ul>
                 </nav>
-
                 {/* A <Switch> looks through its children <Route>s and
             renders the first one that matches the current URL. */}
                 <Switch>
