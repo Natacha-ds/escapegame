@@ -12,31 +12,9 @@ code {
         monospace;
 }
 
-h1 {
-    font-family: 'Abril Fatface';
-    text-align: center;
-    font-size: 60px;
-}
-
-.explanations {
-    font-style: italic;
-    font-family: 'Vollkorn';
-    font-size: 16px;
-}
-
-.wrongAnswer {
-    color: #de5a5a;
-}
-
-.validationButton {
-    padding: 8px 0 8px 0;
-    font: bold 16px Arial;
-    color: #484141;
-    border-radius: 6px;
-    width: 160px;
-    border: solid 2px#484141;
-    margin-left: 8px;
-    background: none;
-    outline: none;
-    font-family: 'Lato';
+.menu {
+    display: flex;
+    margin: 0px;
+    flex-direction: column;
+    padding: 0px;
 }
