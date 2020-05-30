@@ -33,7 +33,7 @@ export function SecretCode() {
                     <br />
                     <NextButton
                         text=">> Prochaine Enigme"
-                        handleClick={handleRedirection}
+                        handleClick={handleRedirection} // possible de mettre link autour
                     />
                 </div>
             );

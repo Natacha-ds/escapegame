@@ -24,36 +24,43 @@
 }
 
 .downArrow {
-    margin-top: 50px;
     color: black;
-    margin-left: 100px;
+    left: 100px;
+    position: absolute;
+    top: 300px;
 }
 
 .secondDownArrow {
-    margin-top: 90px;
+    top: 400px;
     color: black;
-    margin-left: 100px;
+    left: 100px;
+    position: absolute;
 }
 
 .diagonaleArrow {
-    margin-top: 90px;
+    position: absolute;
+    top: 500px;
     color: black;
-    margin-left: 200px;
+    left: 200px;
 }
 
 .rightArrow {
-    margin-top: 90px;
+    top: 600px;
     color: black;
-    margin-left: 320px;
+    left: 320px;
+    position: absolute;
 }
 
 .secondDiagonaleArrow {
-    margin-top: 40px;
-    color: black;
-    margin-left: 450px;
+    top: 700px;
+    ccolor: black;
+    left: 450px;
+    position: absolute;
 }
 
 .exitCross {
+    top: 710px;
+    position: absolute;
     color: black;
-    margin-left: 470px;
+    left: 470px;
 }

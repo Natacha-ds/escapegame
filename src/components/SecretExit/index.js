@@ -13,7 +13,7 @@ export function SecretExit() {
             <div className={style.secondDownArrow}>↓</div>
             <div className={style.diagonaleArrow}>↘︎</div>
             <div className={style.rightArrow}>→</div>
-            <div className={style.secondDiagonaleArrow}>↘︎</div>;
+            <div className={style.secondDiagonaleArrow}>↘︎</div>
             <Link className={style.exitCross} to="/">
                 ⤫
             </Link>
