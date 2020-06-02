@@ -6,6 +6,8 @@
     background-repeat: no-repeat;
     height: 700px;
     background-size: cover;
+    background-color: black;
+    width: 100%;
 }
 
 .whiteh1 {
@@ -26,41 +28,41 @@
 .downArrow {
     color: black;
     left: 100px;
-    position: absolute;
-    top: 300px;
+    position: relative;
+    top: 5px;
 }
 
 .secondDownArrow {
-    top: 400px;
+    top: 80px;
     color: black;
     left: 100px;
-    position: absolute;
+    position: relative;
 }
 
 .diagonaleArrow {
-    position: absolute;
-    top: 500px;
+    position: relative;
+    top: 150px;
     color: black;
     left: 200px;
 }
 
 .rightArrow {
-    top: 600px;
+    top: 200px;
     color: black;
     left: 320px;
-    position: absolute;
+    position: relative;
 }
 
 .secondDiagonaleArrow {
-    top: 700px;
-    ccolor: black;
+    top: 300px;
+    color: black;
     left: 450px;
-    position: absolute;
+    position: relative;
 }
 
 .exitCross {
-    top: 710px;
-    position: absolute;
+    top: 302px;
+    position: relative;
     color: black;
     left: 470px;
 }
