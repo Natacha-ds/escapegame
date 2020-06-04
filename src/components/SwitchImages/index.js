@@ -51,6 +51,7 @@ export function SwitchImages() {
                                     opacity:
                                         'LAMOURNIAIS'[index] === item ? 0 : 1,
                                 }}
+                                key={`item-${item}${index}`}
                             ></div>
                         );
                     })}
@@ -66,7 +67,6 @@ export function SwitchImages() {
 
                 <div className={style.globalBlock}>
                     {items.map((item, index) => {
-                        //penser au ternaire
                         return (
                             <div
                                 className={style.blackBlock}
@@ -74,6 +74,7 @@ export function SwitchImages() {
                                     opacity:
                                         'LUISMARIANO'[index] === item ? 0 : 1,
                                 }}
+                                key={`item-${item}${index}`}
                             ></div>
                         );
                     })}
