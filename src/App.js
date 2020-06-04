@@ -4,6 +4,7 @@ import { SecretCode } from './components/SecretCode';
 import { Home } from './components/Home';
 import { ColorsAndLetters } from './components/ColorsAndLetters';
 import { SecretExit } from './components/SecretExit';
+import { SwitchImages } from './components/SwitchImages/index';
 
 export default function App() {
     return (
@@ -25,6 +26,9 @@ export default function App() {
                         <li>
                             <Link to="/secretexit">Secret Exit</Link>
                         </li>
+                        <li>
+                            <Link to="/switchimages">Switch images</Link>
+                        </li>
                     </ul>
                 </nav>
 
@@ -37,6 +41,9 @@ export default function App() {
                     </Route>
                     <Route path="/secretexit">
                         <SecretExit />
+                    </Route>
+                    <Route path="/switchimages">
+                        <SwitchImages />
                     </Route>
                     <Route path="/">
                         <Home />

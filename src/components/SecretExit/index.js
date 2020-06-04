@@ -1,6 +1,6 @@
-import React, { useState } from 'react';
+import React from 'react';
 import style from './style.module.css';
-import { useHistory, Link } from 'react-router-dom';
+import { Link } from 'react-router-dom';
 
 export function SecretExit() {
     return (
@@ -14,7 +14,7 @@ export function SecretExit() {
             <div className={style.diagonaleArrow}>↘︎</div>
             <div className={style.rightArrow}>→</div>
             <div className={style.secondDiagonaleArrow}>↘︎</div>
-            <Link className={style.exitCross} to="/">
+            <Link className={style.exitCross} to="/switchimages">
                 ⤫
             </Link>
         </div>
