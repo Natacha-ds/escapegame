@@ -5,29 +5,34 @@ import { Home } from './components/Home';
 import { ColorsAndLetters } from './components/ColorsAndLetters';
 import { SecretExit } from './components/SecretExit';
 import { SwitchImages } from './components/SwitchImages/index';
+import './index.css';
+import { Card } from './components/Card/index';
 
 export default function App() {
     return (
         <Router>
             <div className="menu">
                 <nav>
-                    <ul>
+                    <ul className="menuSteps">
                         <li>
                             <Link to="/">Home</Link>
                         </li>
                         <li>
-                            <Link to="/secretcode">Secret Code</Link>
+                            <Link to="/secretcode">Le code secret</Link>
                         </li>
                         <li>
                             <Link to="/colorsandletters">
-                                Colors and Letters
+                                La couleur des lettres
                             </Link>
                         </li>
                         <li>
-                            <Link to="/secretexit">Secret Exit</Link>
+                            <Link to="/secretexit">L'échappatoire</Link>
                         </li>
                         <li>
-                            <Link to="/switchimages">Switch images</Link>
+                            <Link to="/switchimages">Deux en un </Link>
+                        </li>
+                        <li>
+                            <Link to="/card">Les symboles </Link>
                         </li>
                     </ul>
                 </nav>
@@ -44,6 +49,9 @@ export default function App() {
                     </Route>
                     <Route path="/switchimages">
                         <SwitchImages />
+                    </Route>
+                    <Route path="/card">
+                        <Card />
                     </Route>
                     <Route path="/">
                         <Home />

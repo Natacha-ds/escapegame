@@ -7,7 +7,7 @@ export function SecretExit() {
         <div className={style.globalSecretExitPage}>
             <h1 className={style.whiteh1}>L'ECHAPPATOIRE </h1>
             <p className={style.explanations}>
-                Toute sortie est une entrée quelque part ailleurs
+                "Toute sortie est une entrée quelque part ailleurs"
             </p>
             <div className={style.downArrow}>↓</div>
             <div className={style.secondDownArrow}>↓</div>

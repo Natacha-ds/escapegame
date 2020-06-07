@@ -5,6 +5,7 @@ import amourniais from '../../Images/amourniais.jpg';
 import mariano from '../../Images/luismariano.jpg';
 import arrayMove from 'array-move';
 import { NextButton } from '../NextButton';
+import { Link } from 'react-router-dom';
 
 export function SwitchImages() {
     const [items, setItems] = useState([
@@ -28,13 +29,17 @@ export function SwitchImages() {
     function goNextMystery() {
         const next = ['L', 'U', 'I', 'S', 'M', 'A', 'R', 'I', 'A', 'N', 'O'];
         if (JSON.stringify(next) == JSON.stringify(items)) {
-            return <NextButton text=">> Prochaine Enigme" />;
+            return (
+                <Link to="/card">
+                    <NextButton text=">> Prochaine Enigme" />
+                </Link>
+            );
         }
     }
 
     return (
         <div className={style.switchImages}>
-            <h1 className={style.white}> Deux en un</h1>
+            <h1 className={style.white}> DEUX EN UN</h1>
             <div className={style.containerImage}>
                 <img
                     className={style.amourniais}
