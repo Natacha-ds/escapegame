@@ -32,7 +32,7 @@ export function SecretCode() {
                 <div>
                     <br />
                     <NextButton
-                        text=">> Prochaine Enigme"
+                        text=">>"
                         handleClick={handleRedirection} // possible de mettre link autour
                     />
                 </div>
@@ -70,7 +70,7 @@ export function SecretCode() {
                     onClick={handleClick}
                     className={style.validationButton}
                 >
-                    Tenter ma chance
+                    I got it!
                 </button>
                 <div className={style.nextButton}>{getResults()}</div>
             </div>

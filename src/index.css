@@ -16,5 +16,20 @@ code {
     display: flex;
     margin: 0px;
     flex-direction: column;
-    padding: 0px;
+
+    background-color: black;
+}
+
+.menuSteps {
+    display: flex;
+    justify-content: space-around;
+    color: white;
+    list-style-type: none;
+    margin: 10px 0px;
+    padding: 0px 10px;
+}
+
+a {
+    text-decoration: none;
+    color: white;
 }

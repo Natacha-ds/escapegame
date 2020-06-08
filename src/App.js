@@ -5,31 +5,21 @@ import { Home } from './components/Home';
 import { ColorsAndLetters } from './components/ColorsAndLetters';
 import { SecretExit } from './components/SecretExit';
 import { SwitchImages } from './components/SwitchImages/index';
+import './index.css';
+import { Card } from './components/Card/index';
+import { WellDone } from './components/WellDone';
 
 export default function App() {
     return (
         <Router>
             <div className="menu">
-                <nav>
-                    <ul>
-                        <li>
-                            <Link to="/">Home</Link>
-                        </li>
-                        <li>
-                            <Link to="/secretcode">Secret Code</Link>
-                        </li>
-                        <li>
-                            <Link to="/colorsandletters">
-                                Colors and Letters
-                            </Link>
-                        </li>
-                        <li>
-                            <Link to="/secretexit">Secret Exit</Link>
-                        </li>
-                        <li>
-                            <Link to="/switchimages">Switch images</Link>
-                        </li>
-                    </ul>
+                <nav className="menuSteps">
+                    <Link to="/">Home</Link>
+                    <Link to="/secretcode">Le code secret</Link>
+                    <Link to="/colorsandletters">La couleur des lettres</Link>
+                    <Link to="/secretexit">L'échappatoire</Link>
+                    <Link to="/switchimages">Deux en un </Link>
+                    <Link to="/card">Les symboles </Link>
                 </nav>
 
                 <Switch>
@@ -44,6 +34,12 @@ export default function App() {
                     </Route>
                     <Route path="/switchimages">
                         <SwitchImages />
+                    </Route>
+                    <Route path="/card">
+                        <Card />
+                    </Route>
+                    <Route path="/end">
+                        <WellDone />
                     </Route>
                     <Route path="/">
                         <Home />

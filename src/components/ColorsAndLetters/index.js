@@ -1,7 +1,7 @@
 import React, { useState } from 'react';
 import { NextButton } from '../NextButton';
 import style from './style.module.css';
-import pastille from '../../Images/pastillev3.png';
+import pastille from '../../Images/pastillev4.png';
 import letter from '../../Images/lettrev2.png';
 import { useHistory } from 'react-router-dom';
 
@@ -21,12 +21,7 @@ export function ColorsAndLetters() {
 
     function getResults() {
         if (letterChoosen === 'e' && clickNumber === 5) {
-            return (
-                <NextButton
-                    text=">> Prochaine Enigme"
-                    handleClick={handleRedirection}
-                />
-            );
+            return <NextButton text=">>" handleClick={handleRedirection} />;
         } else if (letterChoosen === 'e' && clickNumber < '5') {
             return;
         } else if (!letterChoosen === 'e' || !letterChoosen === '') {
@@ -49,19 +44,19 @@ export function ColorsAndLetters() {
 
             <div className={style.images}>
                 <img
-                    src={pastille}
-                    className={style.mainimage}
-                    alt="pastille de couleur"
-                />
-                <img
                     src={letter}
                     className={style.mainimage}
                     alt="suite de lettres"
                 />
+                <img
+                    src={pastille}
+                    className={style.mainimage}
+                    alt="pastille de couleur"
+                />
             </div>
             <div className={style.center}>
                 <p className={style.explanations}>
-                    La bonne lettre, pour combien de fois... ?
+                    Choisis la bonne lettre, le bon nombre de fois...
                 </p>
                 <div className={style.letterToChoose}>
                     <p className={style.oneletter} onClick={handleClick}>
@@ -93,6 +88,7 @@ export function ColorsAndLetters() {
                     </p>
                 </div>
             </div>
+
             <div> {getResults()}</div>
         </div>
     );
