@@ -7,6 +7,7 @@ import { SecretExit } from './components/SecretExit';
 import { SwitchImages } from './components/SwitchImages/index';
 import './index.css';
 import { Card } from './components/Card/index';
+import { WellDone } from './components/WellDone';
 
 export default function App() {
     return (
@@ -52,6 +53,9 @@ export default function App() {
                     </Route>
                     <Route path="/card">
                         <Card />
+                    </Route>
+                    <Route path="/end">
+                        <WellDone />
                     </Route>
                     <Route path="/">
                         <Home />
