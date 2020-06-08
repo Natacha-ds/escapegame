@@ -13,29 +13,13 @@ export default function App() {
     return (
         <Router>
             <div className="menu">
-                <nav>
-                    <ul className="menuSteps">
-                        <li>
-                            <Link to="/">Home</Link>
-                        </li>
-                        <li>
-                            <Link to="/secretcode">Le code secret</Link>
-                        </li>
-                        <li>
-                            <Link to="/colorsandletters">
-                                La couleur des lettres
-                            </Link>
-                        </li>
-                        <li>
-                            <Link to="/secretexit">L'échappatoire</Link>
-                        </li>
-                        <li>
-                            <Link to="/switchimages">Deux en un </Link>
-                        </li>
-                        <li>
-                            <Link to="/card">Les symboles </Link>
-                        </li>
-                    </ul>
+                <nav className="menuSteps">
+                    <Link to="/">Home</Link>
+                    <Link to="/secretcode">Le code secret</Link>
+                    <Link to="/colorsandletters">La couleur des lettres</Link>
+                    <Link to="/secretexit">L'échappatoire</Link>
+                    <Link to="/switchimages">Deux en un </Link>
+                    <Link to="/card">Les symboles </Link>
                 </nav>
 
                 <Switch>
