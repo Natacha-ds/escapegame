@@ -4,6 +4,7 @@ import style from './style.module.css';
 import pastille from '../../Images/pastillev4.png';
 import letter from '../../Images/lettrev2.png';
 import { useHistory } from 'react-router-dom';
+import { Help } from '../Help';
 
 export function ColorsAndLetters() {
     const [letterChoosen, setLetterChoosen] = useState('');
@@ -40,6 +41,10 @@ export function ColorsAndLetters() {
 
     return (
         <div className={style.globalColorsAndLetters}>
+            <Help
+                text="D'abord la lettre seule, ensuite son nombre de fois"
+                color="black"
+            />
             <h1> LA COULEUR DES LETTRES </h1>
 
             <div className={style.images}>

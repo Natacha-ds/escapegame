@@ -1,10 +1,12 @@
 import React from 'react';
 import style from './style.module.css';
 import { Link } from 'react-router-dom';
+import { Help } from '../Help';
 
 export function SecretExit() {
     return (
         <div className={style.globalSecretExitPage}>
+            <Help text="Le noir cache tout..." color="white" />
             <h1 className={style.whiteh1}>L'ECHAPPATOIRE </h1>
             <p className={style.explanations}>
                 "Toute sortie est une entrée quelque part ailleurs"
