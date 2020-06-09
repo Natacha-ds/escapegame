@@ -6,6 +6,7 @@ import mariano from '../../Images/luismariano.jpg';
 import arrayMove from 'array-move';
 import { NextButton } from '../NextButton';
 import { Link } from 'react-router-dom';
+import { Help } from '../Help/index';
 
 export function SwitchImages() {
     const [items, setItems] = useState([
@@ -31,7 +32,7 @@ export function SwitchImages() {
         if (JSON.stringify(next) == JSON.stringify(items)) {
             return (
                 <Link to="/card">
-                    <NextButton text=">> Prochaine Enigme" />
+                    <NextButton text=">>" />
                 </Link>
             );
         }
@@ -39,6 +40,7 @@ export function SwitchImages() {
 
     return (
         <div className={style.switchImages}>
+            <Help text="Ah ces anagrammes !" color="white" />
             <h1 className={style.white}> DEUX EN UN</h1>
             <div className={style.containerImage}>
                 <img
@@ -63,6 +65,7 @@ export function SwitchImages() {
                 </div>
             </div>
             <SortableComponent items={items} onSortEnd={onSortEnd} />
+            <div>{goNextMystery()}</div>
             <div className={style.containerImage}>
                 <img
                     className={style.mariano}
@@ -85,7 +88,6 @@ export function SwitchImages() {
                     })}
                 </div>
             </div>
-            <div>{goNextMystery()}</div>
         </div>
     );
 }

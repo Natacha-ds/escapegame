@@ -2,6 +2,7 @@ import React, { useState } from 'react';
 import style from './style.module.css';
 import { NextButton } from '../NextButton';
 import { useHistory } from 'react-router-dom';
+import { Help } from '../Help/index';
 
 export function SecretCode() {
     const [secretCode, setSecretCode] = useState('');
@@ -31,10 +32,7 @@ export function SecretCode() {
             return (
                 <div>
                     <br />
-                    <NextButton
-                        text=">>"
-                        handleClick={handleRedirection} // possible de mettre link autour
-                    />
+                    <NextButton text=">>" handleClick={handleRedirection} />
                 </div>
             );
         } else if (proposition === 'false') {
@@ -42,8 +40,10 @@ export function SecretCode() {
         } else {
         }
     }
+
     return (
         <div className={style.globalSecretCode}>
+            <Help text="Parles-tu le Leet Language ?" color="black" />
             <h1>LE CODE SECRET </h1>
             <div className={style.gameBlock}>
                 <p className={style.explanations}>
@@ -70,7 +70,7 @@ export function SecretCode() {
                     onClick={handleClick}
                     className={style.validationButton}
                 >
-                    I got it!
+                    Let's try!
                 </button>
                 <div className={style.nextButton}>{getResults()}</div>
             </div>
