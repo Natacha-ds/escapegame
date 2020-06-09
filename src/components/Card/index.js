@@ -3,7 +3,7 @@ import style from './style.module.css';
 import { NextButton } from '../NextButton';
 import { Symbole } from '../Symbole/index.js';
 import { Link } from 'react-router-dom';
-import { Help } from '../Help/index';
+import { Help } from '../Help';
 
 export function Card() {
     const [answerFirstCard, setAnswerFirstCard] = useState('');

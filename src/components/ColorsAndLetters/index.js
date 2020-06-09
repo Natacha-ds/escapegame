@@ -4,7 +4,7 @@ import style from './style.module.css';
 import pastille from '../../Images/pastillev4.png';
 import letter from '../../Images/lettrev2.png';
 import { useHistory } from 'react-router-dom';
-import { Help } from '../Help/index';
+import { Help } from '../Help';
 
 export function ColorsAndLetters() {
     const [letterChoosen, setLetterChoosen] = useState('');

@@ -1,7 +1,7 @@
 import React from 'react';
 import style from './style.module.css';
 import { Link } from 'react-router-dom';
-import { Help } from '../Help/index';
+import { Help } from '../Help';
 
 export function SecretExit() {
     return (

@@ -2,7 +2,7 @@ import React, { useState } from 'react';
 import style from './style.module.css';
 import { NextButton } from '../NextButton';
 import { useHistory } from 'react-router-dom';
-import { Help } from '../Help/index';
+import { Help } from '../Help';
 
 export function SecretCode() {
     const [secretCode, setSecretCode] = useState('');

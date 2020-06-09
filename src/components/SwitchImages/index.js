@@ -6,7 +6,7 @@ import mariano from '../../Images/luismariano.jpg';
 import arrayMove from 'array-move';
 import { NextButton } from '../NextButton';
 import { Link } from 'react-router-dom';
-import { Help } from '../Help/index';
+import { Help } from '../Help';
 
 export function SwitchImages() {
     const [items, setItems] = useState([

@@ -4,28 +4,17 @@ import help from '../../Images/help.png';
 
 export function Help({ text, color }) {
     const [displayMessage, setdisplayMessage] = useState('Help ?');
-
-    function handleClick() {
-        setdisplayMessage(text);
-    }
-
-    function colors() {
-        if (color == 'black') {
-            return style.black;
-        } else {
-            return style.white;
-        }
-    }
-
     return (
         <div className={style.helpBlock}>
             <img
                 className={style.helpImage}
                 src={help}
-                onClick={handleClick}
+                onClick={() => setdisplayMessage(text)}
                 text={text}
             />
-            <div className={colors()}>{displayMessage}</div>
+            <div className={color === 'black' ? style.black : style.white}>
+                {displayMessage}
+            </div>
         </div>
     );
 }
