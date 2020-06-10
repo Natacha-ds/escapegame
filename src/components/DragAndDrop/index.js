@@ -1,4 +1,4 @@
-import React, { Component, useState } from 'react';
+import React from 'react';
 import { SortableContainer, SortableElement } from 'react-sortable-hoc';
 import style from './style.module.css';
 

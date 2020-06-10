@@ -70,7 +70,7 @@ export function SecretCode() {
                     onClick={handleClick}
                     className={style.validationButton}
                 >
-                    Let's try!
+                    Valider
                 </button>
                 <div className={style.nextButton}>{getResults()}</div>
             </div>

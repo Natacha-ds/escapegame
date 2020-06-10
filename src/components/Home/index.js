@@ -17,7 +17,10 @@ export function Home() {
                     <p className={style.bonchance}>Bon chance !</p>
                 </p>
             </div>
-            <button onClick={handleClick}> Start </button>
+            <button className={style.startButton} onClick={handleClick}>
+                {' '}
+                Commencer{' '}
+            </button>
         </div>
     );
 }

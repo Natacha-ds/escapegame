@@ -1,7 +1,7 @@
 .next {
     padding: 8px 0 8px 0;
     font-size: 30px;
-    background: #478bf9;
+    background: #cb7171;
     color: #fff;
     border-radius: 40px;
     width: 60px;
@@ -19,5 +19,5 @@
 
 .next:hover {
     background: linear-gradient(to bottom, #eb675e 5%, #e4685d 100%);
-    background-color: #eb675e;
+    background-color: #ad1616;
 }

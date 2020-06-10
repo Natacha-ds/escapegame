@@ -22,14 +22,20 @@ code {
 
 .menuSteps {
     display: flex;
-    justify-content: space-around;
+    justify-content: space-between;
     color: white;
     list-style-type: none;
-    margin: 10px 0px;
+    margin: 10px 10px;
     padding: 0px 10px;
+    align-items: center;
+    height: 40px;
 }
 
 a {
     text-decoration: none;
     color: white;
+}
+
+.testnumber {
+    border: solid 1px white;
 }

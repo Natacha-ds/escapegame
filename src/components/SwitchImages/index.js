@@ -29,7 +29,7 @@ export function SwitchImages() {
 
     function goNextMystery() {
         const next = ['L', 'U', 'I', 'S', 'M', 'A', 'R', 'I', 'A', 'N', 'O'];
-        if (JSON.stringify(next) == JSON.stringify(items)) {
+        if (JSON.stringify(next) === JSON.stringify(items)) {
             return (
                 <Link to="/card">
                     <NextButton text=">>" />

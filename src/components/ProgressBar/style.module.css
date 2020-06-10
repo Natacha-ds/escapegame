@@ -1,0 +1,40 @@
+.currentStep {
+    border: 1px solid white;
+    width: 40px;
+    height: 40px;
+    border-radius: 20px;
+    text-align: center;
+    line-height: 40px;
+    background-color: white;
+    color: black;
+    font-weight: 700;
+    margin: 0 10px;
+}
+
+.otherStep {
+    border: 1px solid white;
+    width: 40px;
+    height: 40px;
+    border-radius: 20px;
+    text-align: center;
+    line-height: 40px;
+    font-weight: 700;
+    margin: 0 10px;
+}
+
+.pastStep {
+    border: 1px solid white;
+    width: 40px;
+    height: 40px;
+    border-radius: 20px;
+    text-align: center;
+    line-height: 40px;
+    background-color: #3d3d3d;
+    color: white;
+    font-weight: 700;
+    margin: 0 10px;
+}
+
+.blockStep {
+    display: flex;
+}

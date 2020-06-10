@@ -8,6 +8,7 @@ export function WellDone() {
             <img
                 className={style.gif}
                 src="https://media.giphy.com/media/YfMHLC2s6okBq/source.gif"
+                alt="feu d'artifices"
             ></img>
         </div>
     );

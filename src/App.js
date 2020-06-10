@@ -1,5 +1,11 @@
 import React from 'react';
-import { BrowserRouter as Router, Switch, Route, Link } from 'react-router-dom';
+import {
+    BrowserRouter as Router,
+    Switch,
+    Route,
+    Link,
+    useLocation,
+} from 'react-router-dom';
 import { SecretCode } from './components/SecretCode';
 import { Home } from './components/Home';
 import { ColorsAndLetters } from './components/ColorsAndLetters';
@@ -8,18 +14,15 @@ import { SwitchImages } from './components/SwitchImages/index';
 import './index.css';
 import { Card } from './components/Card/index';
 import { WellDone } from './components/WellDone';
+import { ProgressBar } from './components/ProgressBar';
 
 export default function App() {
     return (
         <Router>
             <div className="menu">
                 <nav className="menuSteps">
-                    <Link to="/">Home</Link>
-                    <Link to="/secretcode">Le code secret</Link>
-                    <Link to="/colorsandletters">La couleur des lettres</Link>
-                    <Link to="/secretexit">L'échappatoire</Link>
-                    <Link to="/switchimages">Deux en un </Link>
-                    <Link to="/card">Les symboles </Link>
+                    <Link to="/">Accueil</Link>
+                    <ProgressBar />
                 </nav>
 
                 <Switch>
@@ -46,6 +49,6 @@ export default function App() {
                     </Route>
                 </Switch>
             </div>
-        </Router>
+        </Router> // router me donne accès à location
     );
 }
