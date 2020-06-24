@@ -1,25 +1,28 @@
 {
   "files": {
-    "main.css": "/escapegame/static/css/main.ce3300eb.chunk.css",
-    "main.js": "/escapegame/static/js/main.63b35755.chunk.js",
-    "main.js.map": "/escapegame/static/js/main.63b35755.chunk.js.map",
+    "main.css": "/escapegame/static/css/main.6682b7b3.chunk.css",
+    "main.js": "/escapegame/static/js/main.a9721a00.chunk.js",
+    "main.js.map": "/escapegame/static/js/main.a9721a00.chunk.js.map",
     "runtime-main.js": "/escapegame/static/js/runtime-main.924d6f43.js",
     "runtime-main.js.map": "/escapegame/static/js/runtime-main.924d6f43.js.map",
-    "static/js/2.552f1f8d.chunk.js": "/escapegame/static/js/2.552f1f8d.chunk.js",
-    "static/js/2.552f1f8d.chunk.js.map": "/escapegame/static/js/2.552f1f8d.chunk.js.map",
+    "static/js/2.cb6d52f6.chunk.js": "/escapegame/static/js/2.cb6d52f6.chunk.js",
+    "static/js/2.cb6d52f6.chunk.js.map": "/escapegame/static/js/2.cb6d52f6.chunk.js.map",
     "index.html": "/escapegame/index.html",
-    "precache-manifest.a69f91aa39103be9330800397152932e.js": "/escapegame/precache-manifest.a69f91aa39103be9330800397152932e.js",
+    "precache-manifest.557aca51a4737d5c1b67462528daeb87.js": "/escapegame/precache-manifest.557aca51a4737d5c1b67462528daeb87.js",
     "service-worker.js": "/escapegame/service-worker.js",
-    "static/css/main.ce3300eb.chunk.css.map": "/escapegame/static/css/main.ce3300eb.chunk.css.map",
-    "static/js/2.552f1f8d.chunk.js.LICENSE.txt": "/escapegame/static/js/2.552f1f8d.chunk.js.LICENSE.txt",
-    "static/media/style.module.css": "/escapegame/static/media/fondpuzzle.1e36b88e.jpg",
+    "static/css/main.6682b7b3.chunk.css.map": "/escapegame/static/css/main.6682b7b3.chunk.css.map",
+    "static/js/2.cb6d52f6.chunk.js.LICENSE.txt": "/escapegame/static/js/2.cb6d52f6.chunk.js.LICENSE.txt",
+    "static/media/amourniais.jpg": "/escapegame/static/media/amourniais.29a4ccbe.jpg",
+    "static/media/style.module.css": "/escapegame/static/media/home.d89e1539.jpg",
+    "static/media/help.png": "/escapegame/static/media/help.dc28b75b.png",
     "static/media/lettrev2.png": "/escapegame/static/media/lettrev2.3c2b5e71.png",
-    "static/media/pastillev3.png": "/escapegame/static/media/pastillev3.c9a1efc9.png"
+    "static/media/luismariano.jpg": "/escapegame/static/media/luismariano.503ead2b.jpg",
+    "static/media/pastillev4.png": "/escapegame/static/media/pastillev4.37cf7eea.png"
   },
   "entrypoints": [
     "static/js/runtime-main.924d6f43.js",
-    "static/js/2.552f1f8d.chunk.js",
-    "static/css/main.ce3300eb.chunk.css",
-    "static/js/main.63b35755.chunk.js"
+    "static/js/2.cb6d52f6.chunk.js",
+    "static/css/main.6682b7b3.chunk.css",
+    "static/js/main.a9721a00.chunk.js"
   ]
 }
