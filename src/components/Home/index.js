@@ -18,8 +18,7 @@ export function Home() {
                 </p>
             </div>
             <button className={style.startButton} onClick={handleClick}>
-                {' '}
-                Commencer{' '}
+                Commencer
             </button>
         </div>
     );

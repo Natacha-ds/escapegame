@@ -1,4 +1,4 @@
-import React, { useState } from 'react';
+import React from 'react';
 import style from './style.module.css';
 import { useLocation } from 'react-router-dom';
 
@@ -7,7 +7,7 @@ export function ProgressBar() {
     let path = location.pathname;
 
     function displayProgressBar() {
-        if (path == '/secretcode') {
+        if (path === '/secretcode') {
             return (
                 <div className={style.blockStep}>
                     <p className={style.currentStep}>1</p>
@@ -17,7 +17,7 @@ export function ProgressBar() {
                     <p className={style.otherStep}>5</p>
                 </div>
             );
-        } else if (path == '/colorsandletters') {
+        } else if (path === '/colorsandletters') {
             return (
                 <div className={style.blockStep}>
                     <p className={style.pastStep}>1</p>
@@ -27,7 +27,7 @@ export function ProgressBar() {
                     <p className={style.otherStep}>5</p>
                 </div>
             );
-        } else if (path == '/secretexit') {
+        } else if (path === '/secretexit') {
             return (
                 <div className={style.blockStep}>
                     <p className={style.pastStep}>1</p>
@@ -37,7 +37,7 @@ export function ProgressBar() {
                     <p className={style.otherStep}>5</p>
                 </div>
             );
-        } else if (path == '/switchimages') {
+        } else if (path === '/switchimages') {
             return (
                 <div className={style.blockStep}>
                     <p className={style.pastStep}>1</p>
@@ -47,7 +47,7 @@ export function ProgressBar() {
                     <p className={style.otherStep}>5</p>
                 </div>
             );
-        } else if (path == '/card') {
+        } else if (path === '/card') {
             return (
                 <div className={style.blockStep}>
                     <p className={style.pastStep}>1</p>
