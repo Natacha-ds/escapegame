@@ -10,7 +10,7 @@ export function WellDone() {
                 <ul>
                     <li>
                         RDV chez les parents le
-                        <strong> samedi 12 septembre pour 12h </strong>où un
+                        <strong> samedi 14 novembre pour 12h </strong>où un
                         buffet traiteur vous attendra...
                     </li>
                     <li>
