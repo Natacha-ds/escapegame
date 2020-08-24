@@ -1,11 +1,11 @@
 self.__precacheManifest = (self.__precacheManifest || []).concat([
   {
-    "revision": "91be9a42d03d5b3a6b17774f4b23ef79",
+    "revision": "973b4a6cb0ec9273f2ee235fde0391d1",
     "url": "/escapegame/index.html"
   },
   {
-    "revision": "ec797419016eab3d9b23",
-    "url": "/escapegame/static/css/main.6682b7b3.chunk.css"
+    "revision": "f8e531f0205680b9dded",
+    "url": "/escapegame/static/css/main.221bb6a2.chunk.css"
   },
   {
     "revision": "47451944b1763cfba046",
@@ -16,8 +16,8 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
     "url": "/escapegame/static/js/2.cb6d52f6.chunk.js.LICENSE.txt"
   },
   {
-    "revision": "ec797419016eab3d9b23",
-    "url": "/escapegame/static/js/main.a9721a00.chunk.js"
+    "revision": "f8e531f0205680b9dded",
+    "url": "/escapegame/static/js/main.eff7c482.chunk.js"
   },
   {
     "revision": "46403bf05df38275eccf",

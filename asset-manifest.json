@@ -1,16 +1,16 @@
 {
   "files": {
-    "main.css": "/escapegame/static/css/main.6682b7b3.chunk.css",
-    "main.js": "/escapegame/static/js/main.a9721a00.chunk.js",
-    "main.js.map": "/escapegame/static/js/main.a9721a00.chunk.js.map",
+    "main.css": "/escapegame/static/css/main.221bb6a2.chunk.css",
+    "main.js": "/escapegame/static/js/main.eff7c482.chunk.js",
+    "main.js.map": "/escapegame/static/js/main.eff7c482.chunk.js.map",
     "runtime-main.js": "/escapegame/static/js/runtime-main.924d6f43.js",
     "runtime-main.js.map": "/escapegame/static/js/runtime-main.924d6f43.js.map",
     "static/js/2.cb6d52f6.chunk.js": "/escapegame/static/js/2.cb6d52f6.chunk.js",
     "static/js/2.cb6d52f6.chunk.js.map": "/escapegame/static/js/2.cb6d52f6.chunk.js.map",
     "index.html": "/escapegame/index.html",
-    "precache-manifest.557aca51a4737d5c1b67462528daeb87.js": "/escapegame/precache-manifest.557aca51a4737d5c1b67462528daeb87.js",
+    "precache-manifest.fa82a97b03048a2550b27f5a9691995d.js": "/escapegame/precache-manifest.fa82a97b03048a2550b27f5a9691995d.js",
     "service-worker.js": "/escapegame/service-worker.js",
-    "static/css/main.6682b7b3.chunk.css.map": "/escapegame/static/css/main.6682b7b3.chunk.css.map",
+    "static/css/main.221bb6a2.chunk.css.map": "/escapegame/static/css/main.221bb6a2.chunk.css.map",
     "static/js/2.cb6d52f6.chunk.js.LICENSE.txt": "/escapegame/static/js/2.cb6d52f6.chunk.js.LICENSE.txt",
     "static/media/amourniais.jpg": "/escapegame/static/media/amourniais.29a4ccbe.jpg",
     "static/media/style.module.css": "/escapegame/static/media/home.d89e1539.jpg",
@@ -22,7 +22,7 @@
   "entrypoints": [
     "static/js/runtime-main.924d6f43.js",
     "static/js/2.cb6d52f6.chunk.js",
-    "static/css/main.6682b7b3.chunk.css",
-    "static/js/main.a9721a00.chunk.js"
+    "static/css/main.221bb6a2.chunk.css",
+    "static/js/main.eff7c482.chunk.js"
   ]
 }
